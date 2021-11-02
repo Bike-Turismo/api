@@ -1,6 +1,6 @@
 import { runWith } from 'firebase-functions';
-import resources from '../../utils/resources';
-import { GetUserByNameController } from '../../controllers/user';
+import resources from 'utils/resources';
+import { GetUserByNameController } from 'controllers/user';
 
 import express from 'express';
 

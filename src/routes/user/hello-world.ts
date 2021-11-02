@@ -1,5 +1,5 @@
 import { runWith } from 'firebase-functions';
-import resources from '../../utils/resources';
+import resources from 'utils/resources';
 
 import express from 'express';
 

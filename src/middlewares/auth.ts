@@ -1,6 +1,6 @@
 import express from 'express';
 import cookieParser from 'cookie-parser';
-import { auth } from '../utils/firebase';
+import { auth } from 'utils/firebase';
 
 const middleware = express();
 

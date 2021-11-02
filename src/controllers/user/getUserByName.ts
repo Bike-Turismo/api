@@ -1,5 +1,5 @@
-import UserModel, { IUser } from "../../models/user";
-import UserRepository from "../../respositories/user";
+import UserModel, { IUser } from "models/user";
+import UserRepository from "respositories/user";
 
 class GetUserByNameController {
   async execute(name: string): Promise<IUser> {
