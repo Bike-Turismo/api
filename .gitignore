@@ -1,0 +1,21 @@
+# Compiled JavaScript files
+**/*.js
+**/*.js.map
+
+# Except the Prettier config file
+!prettier.config.js
+
+# Except the ESLint config file
+!.eslintrc.js
+
+# TypeScript v1 declaration files
+typings/
+
+# Node.js dependency directory
+node_modules/
+
+# yarn
+yarn.lock
+
+# npm
+package-lock.json

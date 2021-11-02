@@ -1,0 +1,1 @@
+export { default as adminHelloWorld } from './hello-world';
