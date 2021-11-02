@@ -2,18 +2,18 @@
   "name": "functions",
   "scripts": {
     "lint": "eslint \"src/**/*\"",
-    "build": "tsc",
+    "build": "tsc && tsc-alias -p tsconfig.json",
     "serve": "npm run build && firebase emulators:start --only functions",
     "shell": "npm run build && firebase functions:shell",
     "start": "npm run shell",
-    "all": "export NODE_ENV=DEBUG && npm run build && firebase emulators:start",
+    "all": "export NODE_ENV=DEBUG && npm run build -y && firebase emulators:start",
     "deploy": "firebase deploy --only functions",
     "logs": "firebase functions:log"
   },
   "engines": {
     "node": "16"
   },
-  "main": "build/index.js",
+  "main": "./build/index.js",
   "dependencies": {
     "cookie-parser": "1.4.5",
     "express": "^4.17.1",
@@ -27,6 +27,7 @@
     "eslint": "8.1.0",
     "eslint-plugin-import": "2.25.2",
     "firebase-functions-test": "0.3.3",
+    "tsc-alias": "^1.4.0",
     "typescript": "4.4.4"
   },
   "private": true

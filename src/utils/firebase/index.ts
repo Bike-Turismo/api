@@ -3,7 +3,7 @@ import { logger } from 'firebase-functions';
 import dataPoint from './data-point';
 
 try {
-  const serviceAccountCredentials: ServiceAccount = require("../service-account-file.json");
+  const serviceAccountCredentials: ServiceAccount = require("../../../service-account-file.json");
 
   initializeApp({
     credential: credential.cert(serviceAccountCredentials),

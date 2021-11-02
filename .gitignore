@@ -24,6 +24,8 @@ package-lock.json
 ui-debug.log
 pubsub-debug.log
 firestore-debug.log
+service-account-file.json
+.runtimeconfig.json
 
 # Logs
 logs

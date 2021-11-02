@@ -62,11 +62,6 @@ module.exports = {
     "prefer-const": "warn",
   },
   settings: {
-    "import/resolver": {
-      node: {
-        paths: ["src"]
-      }
-    },
     jsdoc: {
       tagNamePreference: {
         returns: "return",
