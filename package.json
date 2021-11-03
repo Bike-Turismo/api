@@ -3,10 +3,11 @@
   "scripts": {
     "lint": "eslint \"src/**/*\"",
     "build": "tsc && tsc-alias -p tsconfig.json",
-    "serve": "npm run build && firebase emulators:start --only functions",
+    "build:watch": "./node_modules/.bin/tsc-watch --onSuccess \"./node_modules/.bin/tsc-alias -p tsconfig.json\"",
+    "serve": "npm run build:watch | firebase emulators:start --only functions",
     "shell": "npm run build && firebase functions:shell",
     "start": "npm run shell",
-    "all": "export NODE_ENV=DEBUG && npm run build -y && firebase emulators:start",
+    "all": "export NODE_ENV=DEBUG && npm run build:watch -y | firebase emulators:start",
     "deploy": "firebase deploy --only functions",
     "logs": "firebase functions:log"
   },
@@ -30,6 +31,7 @@
     "eslint-plugin-import": "2.25.2",
     "firebase-functions-test": "0.3.3",
     "tsc-alias": "1.4.0",
+    "tsc-watch": "^4.5.0",
     "typescript": "4.4.4"
   },
   "private": true,
