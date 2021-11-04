@@ -1,15 +1,15 @@
 module.exports = {
   env: {
-    browser: true,
-    es6: true,
+    es2021: true,
     node: true,
   },
   extends: [
+    'airbnb-base',
     "plugin:import/errors",
     "plugin:import/warnings",
     "plugin:import/typescript",
   ],
-  parser: "@typescript-eslint/parser",
+  parser: '@typescript-eslint/parser',
   parserOptions: {
     project: "tsconfig.json",
     sourceType: "module",
@@ -60,8 +60,25 @@ module.exports = {
     "no-var": "warn",
     "no-void": "error",
     "prefer-const": "warn",
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "js": "never",
+        "ts": "never"
+      }
+    ],
+    "no-underscore-dangle": 'off',
+    "class-methods-use-this": 'off',
+    "max-len": ["error", { "code": 120 }],
   },
   settings: {
+    'import/resolver': {
+        node: {
+          extensions: ['.js', '.jsx', '.ts', '.tsx'],
+          moduleDirectory: ['node_modules', 'src/'],
+        },
+    },
     jsdoc: {
       tagNamePreference: {
         returns: "return",
