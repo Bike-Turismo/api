@@ -1,17 +1,19 @@
-export type Timestamp = FirebaseFirestore.Timestamp;
+import { firestore } from 'firebase-admin';
 
-export type DocumentData = FirebaseFirestore.DocumentData;
+export type Timestamp = firestore.Timestamp;
 
-export type QuerySnapshot<T> = FirebaseFirestore.QuerySnapshot<T>;
+export type DocumentData = firestore.DocumentData;
 
-export type QueryDocumentSnapshot<T> = FirebaseFirestore.QueryDocumentSnapshot<T>;
+export type QuerySnapshot<T> = firestore.QuerySnapshot<T>;
 
-export type DocumentSnapshot<T> = FirebaseFirestore.DocumentSnapshot<T>;
+export type QueryDocumentSnapshot<T> = firestore.QueryDocumentSnapshot<T>;
 
-export type DocumentReference<T> = FirebaseFirestore.DocumentReference<T>;
+export type DocumentSnapshot<T> = firestore.DocumentSnapshot<T>;
 
-export type WriteResult = FirebaseFirestore.WriteResult;
+export type DocumentReference<T> = firestore.DocumentReference<T>;
 
-export type CollectionGroup<T> = FirebaseFirestore.CollectionGroup<T>;
+export type WriteResult = firestore.WriteResult;
 
-export type CollectionReference<T> = FirebaseFirestore.CollectionReference<T>;
+export type CollectionGroup<T> = firestore.CollectionGroup<T>;
+
+export type CollectionReference<T> = firestore.CollectionReference<T>;

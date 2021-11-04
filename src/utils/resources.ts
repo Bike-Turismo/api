@@ -5,7 +5,7 @@ interface IResources {
 }
 
 const resources: IResources = {
-    low: { timeoutSeconds: 10, memory: "128MB" },
+  low: { timeoutSeconds: 10, memory: '128MB' },
 };
 
 export default resources;

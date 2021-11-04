@@ -12,6 +12,7 @@ class UserModel implements IUser {
   public get name(): string | undefined {
     return this._name;
   }
+
   public set name(value: string | undefined) {
     this._name = value;
   }

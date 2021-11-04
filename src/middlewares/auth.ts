@@ -10,9 +10,9 @@ const middleware = express();
 // when decoded successfully, the ID Token content will be added as `req.user`.
 const validateFirebaseIdToken = async (req: express.Request, res: express.Response, next: express.NextFunction) => {
   if (
-    (!req.headers.authorization || !req.headers.authorization.startsWith('Bearer ')) &&
+    (!req.headers.authorization || !req.headers.authorization.startsWith('Bearer '))
     // eslint-disable-next-line no-underscore-dangle
-    !(req.cookies && req.cookies.__session)
+    && !(req.cookies && req.cookies.__session)
   ) {
     res.status(401).send({ message: 'Cookie or header invalid' });
     return;

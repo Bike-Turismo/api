@@ -1,6 +1,6 @@
-import AppError from "errors/app-error";
-import UserModel, { IUser } from "models/user";
-import { dataPoint } from "utils/firebase";
+import AppError from 'errors/app-error';
+import UserModel, { IUser } from 'models/user';
+import { dataPoint } from 'utils/firebase';
 
 class UserRepository {
   public static readonly collection = 'users';

@@ -1,9 +1,9 @@
-import UserModel, { IUser } from "models/user";
-import UserRepository from "repositories/user";
+import UserModel, { IUser } from 'models/user';
+import UserRepository from 'repositories/user';
 
 class GetUserByNameController {
   async execute(name: string): Promise<IUser> {
-    const userRepository = new UserRepository;
+    const userRepository = new UserRepository();
     const userModel = new UserModel({ name });
 
     try {
@@ -16,4 +16,4 @@ class GetUserByNameController {
   }
 }
 
-export { GetUserByNameController }
+export default GetUserByNameController;
