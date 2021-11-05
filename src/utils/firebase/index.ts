@@ -6,7 +6,7 @@ import dataPoint from './data-point';
 
 try {
   // eslint-disable-next-line global-require
-  const serviceAccountCredentials: ServiceAccount = require('../../../service-account-file.json');
+  const serviceAccountCredentials: ServiceAccount = require('../../../.serviceaccount.json');
 
   initializeApp({
     credential: credential.cert(serviceAccountCredentials),
