@@ -92,7 +92,7 @@ i  pubsub: Pub/Sub Emulator logging to pubsub-debug.log
 i  ui: Emulator UI logging to ui-debug.log
 ✔  functions[userHelloWorld]: http function initialized (http://0.0.0.0:5001/bike-turismo/us-central1/userHelloWorld).
 ✔  functions[getUserByName]: http function initialized (http://0.0.0.0:5001/bike-turismo/us-central1/getUserByName).
-✔  functions[WelcomeNewUser]: firestore function initialized.
+✔  functions[welcomeNewUser]: firestore function initialized.
 ✔  functions[adminHelloWorld]: http function initialized (http://0.0.0.0:5001/bike-turismo/us-central1/adminHelloWorld).
 
 ┌──────────────────────────────────────────────────────────────┐
