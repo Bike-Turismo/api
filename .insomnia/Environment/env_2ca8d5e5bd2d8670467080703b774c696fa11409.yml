@@ -1,0 +1,14 @@
+_id: env_2ca8d5e5bd2d8670467080703b774c696fa11409
+type: Environment
+parentId: wrk_cb645b73fb1248db961de1adf2946dd8
+modified: 1636161579115
+created: 1636159803644
+name: Base Environment
+data:
+  baseUrl: http://0.0.0.0:5001/bike-turismo/us-central1
+dataPropertyOrder:
+  "&":
+    - baseUrl
+color: null
+isPrivate: false
+metaSortKey: 1636159803644

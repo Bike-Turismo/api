@@ -1,0 +1,21 @@
+_id: req_06cd787add334326bae81d959b0a7de3
+type: Request
+parentId: fld_36e239808c1041039fc208ffdafbc647
+modified: 1636161303288
+created: 1636161301632
+url: "{{ _.baseUrl }}/getUserByName/alexandre"
+name: get
+description: ""
+method: GET
+body: {}
+parameters: []
+headers: []
+authentication: {}
+metaSortKey: -1636161301632
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

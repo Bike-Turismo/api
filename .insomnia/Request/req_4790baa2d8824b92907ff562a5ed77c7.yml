@@ -1,0 +1,21 @@
+_id: req_4790baa2d8824b92907ff562a5ed77c7
+type: Request
+parentId: fld_02695676cdb44128b40af0f743cca27e
+modified: 1636161254878
+created: 1636161241373
+url: "{{ _.baseUrl }}/adminHelloWorld"
+name: AdminHelloWorld
+description: ""
+method: GET
+body: {}
+parameters: []
+headers: []
+authentication: {}
+metaSortKey: -1636161241373
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global
