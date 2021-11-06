@@ -21,6 +21,8 @@ This project was developed, using the following technologies:
 These tools were essential for the development of the entire project.
 
 - [VS Code][vc] - Best IDE :)
+- [Git CZ](https://github.com/commitizen/cz-cli) - To make this repo Commitizen-friendly
+- [Git Flow](https://danielkummer.github.io/git-flow-cheatsheet/index.html) - To improve organization between branches
 - [Insomnia](https://insomnia.rest/) - To manage and test api requisitions
 
 ## Dependencies
@@ -80,6 +82,7 @@ $ yarn dev
 ```
 
 ### Success 🚀. The app was running in 0.0.0.0:5001.
+
 ```bash
 i  emulators: Starting emulators: auth, functions, firestore, pubsub
 ⚠  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: database, hosting
@@ -108,3 +111,7 @@ i  ui: Emulator UI logging to ui-debug.log
 │ Pub/Sub        │ 0.0.0.0:8085 │ n/a                    │
 └────────────────┴──────────────┴────────────────────────┘
 ```
+
+### IMPORTANT!!!
+
+To test these routes and update documentation with new ones use [Insomnia](https://docs.insomnia.rest/insomnia/design-documents).
